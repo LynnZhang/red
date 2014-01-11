@@ -418,3 +418,25 @@ Processing by IdeasController#show as HTML
   [1m[35mIdea Load (1.0ms)[0m  SELECT "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT 1  [["id", "2"]]
   Rendered ideas/show.html.erb within layouts/application (4.0ms)
 Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ideas" for 127.0.0.1 at 2014-01-11 14:28:02 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.0ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 218ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-11 14:28:14 +0800
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (1.0ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-11 14:29:21 +0800
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (1.0ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 1.0ms)
